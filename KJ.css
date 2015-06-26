@@ -222,7 +222,7 @@ header a {
 	float: left;
 	width: 100%;
 	padding: 10px;
-	max-width: 450px;
+	max-width: 380px;
 }
 
 #pic2 {
@@ -246,7 +246,7 @@ header a {
 	margin: 0 2.5% 0 2.5%;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 428px) {
 	#pic1, #pic2{
 		width: 49%;
 	}
