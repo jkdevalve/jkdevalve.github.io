@@ -3,7 +3,10 @@
 	margin: 0 auto;
 	padding: 0;
 }
-
+html,body {
+	width: 100%;
+	height: 100%;
+}
 .container{
 	width: 100%;
 	height: 100%;
@@ -13,21 +16,17 @@ a:hover {
 	font-weight: 900;
 }
 
+h4, p {
+	color: #1A1A1A;
+}
+
 /*------------------------NAV BAR-----------------------------------*/
 .nav {
 	width: 100%;
 	height: 60px;
-	position: absolute;
 	opacity: .9;
-	z-index: 1;
-}
-
-.navbar {
-	width: 100%;
-	height: 60px;
-	background-color: #000000;
-	opacity: .5;
-	display: inline-block;
+	z-index: 2;
+	background-color: #003D5C;
 }
 
 .logo {
@@ -41,11 +40,11 @@ a:hover {
 	height: 60px;
 	width: 60px;
 	float: right;
+	display: inline-block;
 }
 
 .grey{
-	background-color: #767676;
-	border: 1px solid #616161;
+	border: 1px solid #002B40;
 	border-radius: 2px;
 }
 .dropdown a{
@@ -54,7 +53,7 @@ a:hover {
 	background-size: contain;
 	height: 35px;
 	width: 60px;
-	margin: 10px 0;
+	margin-top: 13px;
 	display: inline-block;
 }
 
@@ -66,8 +65,6 @@ a:hover {
 	text-decoration: none;
 	color: white;
 }
-
-
 
 #menu li {
 	
@@ -85,52 +82,60 @@ a:hover {
 	width: 150px;
 	height: 220px;
 	text-align: center;
-	float: right;
-	clear: both;
-	background-color: #767676;
+	background-color: #003D5C;
 	border-bottom-left-radius: 2px;
 	border-top-left-radius: 2px;
-	border: 1px solid #616161;
+	border: 1px solid #002B40;
+	position: fixed;
+	right: 0;
+	top: 60px;
 }
 
 .hidden {
 	display: none;
 }
 
-@media screen and (min-width: 615px) {
+@media screen and (min-width: 658px) {
 	.dropdown {
 		display: none;
 	}
 
-	.nav ul {
+	#menu {
 		display: inline;
 	}
 }
 
-/*-------------------------------FRONT PAGE PIC-----------------------*/
-.tint {
-	width: 100%;
-	height: 500px;
-	background-color: rgba(10, 0, 26, .2);
-	position: absolute;
+@media screen and (min-width: 810px){
+	#menu li {
+		margin: 0 15px;
+	}
 }
 
+@media screen and (min-width: 1024px){
+	#menu li {
+		margin: 0 20px;
+	}
+}
+
+/*-------------------------------FRONT PAGE PIC-----------------------*/
 .frntpic {
-	height: 500px;
+	height: 100%;
 	background-image: url("frntpic.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-size: cover;
-	background-position: 60% 30%;	
+	background-position: 60% 30%;
+	box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.71);
 }
 
 header {
 	width: 100%;
-	padding-top: 250px;
+	margin-top: 180px;
 	text-align: center;
 	font-family: "Montserrat";
 	color: white;
 	position: relative;
+	z-index: 1;
 }
 h1 {
 	letter-spacing: .2em;
@@ -140,8 +145,9 @@ h1 {
 
 h2 {
 	color: #558566;
+	font-family: "Montserrat";
 }
-h3 {
+header header h3 {
 	padding: 10px;
 }
 
@@ -156,22 +162,53 @@ header a {
 	padding: 5px;
 	margin: 5px;
 }
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-height: 481px){
 	header {
-		padding-top: 150px;
+		margin-top: 250px;
+	}
+}
+@media screen and (min-height: 600px){
+	header {
+		margin-top: 350px;
+	}
+}
+
+@media screen and (min-width: 768px){
+	header {
+		margin-top: 500px;
 	}
 	h1 {
 		font-size: 3em;
-		padding-bottom: 70px;
+		padding-bottom: 30px;
 	}
-	h3, header a {
+	header h3, header a {
+		font-size: 1.5em;
+		padding: 15px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	header {
+		margin-top: 400px;
+	}
+	h1 {
+		font-size: 3em;
+		padding-bottom: 30px;
+	}
+	header h3, header a {
 		font-size: 1.5em;
 		padding: 15px;
 	}
 }
 /*----------------------STATEMENT--------------------------*/
-
+.verse {
+	width: 100%;
+	padding: 20px;
+	font-family: "Montserrat";
+	display: inline-block;
+	position: relative;
+	top: 100%;
+}
 .statement {
 	width: 100%;
 	padding: 20px;
@@ -180,32 +217,43 @@ header a {
 	vertical-align: top;
 }
 
-.verse {
+.statement-support {
 	width: 100%;
 	padding: 20px;
 	font-family: "Montserrat";
 	display: inline-block;
+	vertical-align: top;
 }
 
-#ntlogo {
-	float: right;
+.social-media {
+	width: 100%;
+	text-align: center;
+}
+
+#mc_embed_signup_scroll_frnt h2 {
+	width: 100%;
+	font-size: 1.3em;
+}
+
+#mc_embed_signup_scroll_frnt .button {
+	height: 30px;
+	width: 70px;
 }
 
 @media screen and (min-width: 768px) {
 	.statement {
 		width: 49%;
 	}
+	.statement-support{
+		width: 100%;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-	.statement{
+	.statement, .statement-support{
 		width: 33%;
 	}
-	.statement:last-of-type{
-		width: 100%;
-		max-width: 800px;
-		display: block;
-	}
+	
 }
 
 /*------------------------OUR STORY PICS----------------------*/
@@ -244,6 +292,9 @@ header a {
 	padding: 10px;
 	max-width: 450px;
 	margin: 0 2.5% 0 2.5%;
+}
+#ntlogo {
+	float: right;
 }
 
 @media screen and (min-width: 428px) {
@@ -284,12 +335,32 @@ header a {
 }
 
 /*----------------------------DONATE----------------------------*/
+.section p {
+	padding: 5px 0;
+}
+.section ul {
+	margin: 0 20px;
+}
+.section li {
+	padding: 10px 0;
+}
 
+.important {
+	font-style: italic;
+}
+.address {
+	text-align: center;
+	font-weight: 600;
+}
 /*--------------------------------CONTACT US--------------------------*/
 #mc_embed_signup {
 	padding: 20px;
 	font-family: "Montserrat";
 }
+label {
+	font-family: "Montserrat";
+}
+
 
 
 /*---------------------FOOTER-------------------------------*/
