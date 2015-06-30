@@ -1,10 +1,5 @@
 $(document).ready(function(){
-
 	$('.dropdown').click(dropdownToggle);
-	$(window).scroll(function(){
-		alert("hello");
-	});
-
 });
 
 function dropdownToggle(){
@@ -12,4 +7,4 @@ function dropdownToggle(){
 	$('#menu').toggleClass('hidden');
 	$('.dropdown').toggleClass('grey');
 	$('.nav').mouseleave(dropdownToggle);
-};
+}
