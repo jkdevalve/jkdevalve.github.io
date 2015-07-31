@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	$('.dropdown').click(dropdownToggle);
 
-	if ($(window).width() < 658){
+	if ($(window).width() > 658){
 	$('.our-story').mouseenter(function() {
 		var pos = $('.our-story').position();
 		var width = ($('.our-story').outerWidth())/4;
