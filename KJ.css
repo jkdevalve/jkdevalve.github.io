@@ -120,12 +120,17 @@ h4, p {
 .hidden {
 	display: none;
 }
+@media screen and (max-width: 658px){
+	.about {
+		display: none;
+	}
+}
 
 @media screen and (min-width: 658px) {
 	.dropdown {
 		display: none;
 	}
-
+	
 	.menu {
 		display: inline;
 	}
