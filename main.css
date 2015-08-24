@@ -394,6 +394,9 @@ header a {
 	font-weight: 600;
 }
 /*--------------------------------CONTACT US--------------------------*/
+.contact-container{
+	min-height: 600px;
+}
 #mc_embed_signup {
 	font-family: "Montserrat";
 	margin: 5px auto;
