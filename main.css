@@ -358,18 +358,53 @@ header a {
 	display: block;
 }
 
-.blog {
-	margin: 0 10% 15px 10%;
-	width: 80%;
-	height: 1000px;
+.imgWrap {
+  position: relative;
+  width: 100%;
+
+}
+#blog-pic {
+	width: 100%;;
+}
+.imgDescription {
+  position: absolute;
+  font-family: "Montserrat";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30%;
+  background: rgba(20,20,20, 0.2);
+  color: #fff;
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media screen and (min-width: 598px) {
-	.calendar {
+	.calendar{
 		height: 600px;
 	}
 }
 
+@media screen and (min-width: 1024px) {
+		.imgWrap{
+		width: 50%;
+		margin: 15px auto 70px auto;
+	}
+
+}
+@media screen and (min-width: 1025px) {
+		.imgDescription {
+		visibility: hidden;
+  		opacity: 0;
+
+  		-webkit-transition: visibility opacity 0.2s;
+	}
+}
 /*----------------------------DONATE----------------------------*/
 .section p {
 	padding: 5px 0;
