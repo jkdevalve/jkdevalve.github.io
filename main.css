@@ -56,7 +56,7 @@ h4, p {
 }
 
 .dropdown a{
-	background-image: url("dropdown.png");
+	background-image: url("img/dropdown.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	height: 35px;
@@ -154,7 +154,7 @@ h4, p {
 /*-------------------------------FRONT PAGE PIC-----------------------*/
 .frntpic {
 	height: 100%;
-	background-image: url("frntpic.jpg");
+	background-image: url("img/frntpic.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-size: cover;
