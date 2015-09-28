@@ -10,11 +10,7 @@ html,body {
 body{
 	-webkit-overflow-scrolling: touch;
 }
-.container{
-	width: 100%;
-	height: 100%;
-	overflow-x: hidden;
-}
+
 a:hover {
 	font-weight: 900;
 }
@@ -235,8 +231,6 @@ header a {
 	padding: 20px;
 	font-family: "Montserrat";
 	display: inline-block;
-	position: relative;
-	top: 100%;
 }
 .statement {
 	width: 100%;
@@ -266,10 +260,15 @@ header a {
 	font-size: 1.3em;
 }
 
-#mc_embed_signup_scroll_frnt .button {
+#mc_embed_signup_scroll_frnt .button, .clear .button {
 	height: 30px;
 	width: 70px;
 }
+
+.clear{
+	text-align: center;
+}
+
 
 @media screen and (min-width: 768px) {
 	.statement {
@@ -447,7 +446,7 @@ header a {
 }
 .mc-field-group label {
 	font-family: "Montserrat";
-	width: 130px;
+	width: 160px;
 	display: inline-block;
 	text-align: right;
 }
@@ -460,8 +459,7 @@ header a {
 }
 
 .indicates-required, .clear{
-	position: relative;
-	left: 30%;
+	
 }
 
 #mc-embedded-subscribe{
