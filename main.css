@@ -234,7 +234,6 @@ header a {
 	font-family: "Montserrat";
 	display: inline-block;
 	position: relative;
-	top: 100%;
 }
 .statement, .statement-support {
 	width: 100%;
