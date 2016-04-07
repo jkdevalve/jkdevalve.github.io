@@ -3,6 +3,9 @@
 	margin: 0 auto;
 	padding: 0;
 }
+*:focus {
+    outline: none;
+}
 html,body {
 	width: 100%;
 	height: 100%;
@@ -72,11 +75,6 @@ h4, p {
 .menu a {
 	text-decoration: none;
 	color: white;
-}
-
-.menu a:hover {
-	border-left: 1px solid #002B40;
-	border-right: 1px solid #002B40;
 }
 
 .menu li {
@@ -232,28 +230,51 @@ header a {
 /*----------------------STATEMENT--------------------------*/
 .verse {
 	width: 100%;
-	padding: 20px;
+	padding: 55px;
 	font-family: "Montserrat";
 	display: inline-block;
 	position: relative;
 	top: 100%;
 }
-.statement {
+.statement, .statement-support {
 	width: 100%;
 	padding: 20px;
 	font-family: "Montserrat";
 	display: inline-block;
 	vertical-align: top;
+	height: 240px;
+    text-align: center;
+    background-size: cover;
 }
 
-.statement-support {
-	width: 100%;
-	padding: 20px;
-	font-family: "Montserrat";
-	display: inline-block;
-	vertical-align: top;
+.statement h2, .statement-support h2 {
+    font-size: 2em;
+    color: white;
 }
 
+.hovertext{
+	display: none;
+	color: white;
+}
+
+#whoweare:hover, #ourhope:hover, #purpose:hover{
+	background-color: grey;
+}
+
+#whoweare{
+	background-image: url(img/wwa.jpg);
+	background-blend-mode: multiply;
+}
+
+#ourhope{
+	background-image: url(img/ourhope.jpg);
+	background-blend-mode: multiply;
+}
+
+#purpose{
+	background-image: url(img/purpose.jpg);
+	background-blend-mode: multiply;
+}
 .social-media {
 	width: 100%;
 	text-align: center;
@@ -261,14 +282,20 @@ header a {
 	padding: 0 15px;
 }
 
+.smlinks{
+	padding: 35px;
+}
+
 #mc_embed_signup_scroll_frnt h2 {
 	width: 100%;
 	font-size: 1.3em;
 }
 
-#mc_embed_signup_scroll_frnt .button {
-	height: 30px;
-	width: 70px;
+#mc_embed_signup_scroll_frnt .button {	
+    border: 1px solid;
+    font-size: small;
+    padding: 5px;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -298,6 +325,7 @@ header a {
 	display: block;
 	overflow: hidden;
 	padding: 15px;
+	padding-top: 50px;
 }
 
 .story p {
@@ -307,7 +335,7 @@ header a {
 #pic1 {
 	float: left;
 	width: 100%;
-	padding: 0 10px 10px 10px;
+	padding: 0 20px 20px 20px;
 	max-width: 380px;
 }
 
@@ -447,14 +475,14 @@ header a {
 }
 .mc-field-group label {
 	font-family: "Montserrat";
-	width: 130px;
 	display: inline-block;
 	text-align: right;
 }
 
-.mc-field-group input {
+#mce-EMAIL {
 	width: 45%;
-	height: 20px;
+	height: 21px;
+	margin-bottom: 5px;
 	max-width: 300px;
 	display: inline-block;
 }
@@ -473,7 +501,7 @@ header a {
 footer {
 	width: 100%;
 	margin-top: 100px;
-	background-color: #3B5998;
+	background-color: #003D5C;
 	height: auto;
 	min-height: 135px;
 	clear: both;

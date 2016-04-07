@@ -12,6 +12,18 @@ $(document).ready(function(){
 	$('.nav').mouseleave(function() {
 			$('.about').addClass('hidden');
 		});
+
+	$(".statement, .statement-support").mouseenter(function() {
+		
+		var box = this.id;
+		console.log("#"+box + " .hovertext");
+		$("#"+box + " .hovertext").show();
+	});
+	$(".statement, .statement-support").mouseleave(function() {
+		var box = this.id;
+		$("#"+box + " .hovertext").hide();
+	});
+
 });
 
 var dropdownToggle = function(){
