@@ -16,6 +16,7 @@ $(document).ready(function(){
 	$(".statement, .statement-support").mouseenter(function() {
 		
 		var box = this.id;
+		console.log("#"+box + " .hovertext");
 		$("#"+box + " .hovertext").show();
 	});
 	$(".statement, .statement-support").mouseleave(function() {
