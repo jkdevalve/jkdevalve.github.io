@@ -241,7 +241,7 @@ header a {
 	font-family: "Montserrat";
 	display: inline-block;
 	vertical-align: top;
-	height: 240px;
+	height: 250px;
     text-align: center;
     background-size: cover;
 }
@@ -252,11 +252,10 @@ header a {
 }
 
 .hovertext{
-	display: none;
 	color: white;
 }
 
-#whoweare:hover, #ourhope:hover, #purpose:hover{
+#whoweare, #ourhope, #purpose{
 	background-color: grey;
 }
 
@@ -312,6 +311,16 @@ header a {
 @media screen and (min-width: 1024px) {
 	.statement, .statement-support{
 		width: 33%;
+	}
+	.hovertext{
+		display: none;
+		background-color: none;
+	}
+	#whoweare:hover, #ourhope:hover, #purpose:hover{
+		background-color: grey;
+	}
+	#whoweare, #ourhope, #purpose{
+		background-color: transparent;
 	}
 		
 }
