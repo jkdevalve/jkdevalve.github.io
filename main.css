@@ -241,7 +241,7 @@ header a {
 	font-family: "Montserrat";
 	display: inline-block;
 	vertical-align: top;
-	height: 250px;
+	height: 285px;
     text-align: center;
     background-size: cover;
 }
@@ -253,6 +253,7 @@ header a {
 
 .hovertext{
 	color: white;
+	background-color: rgba(1,1,1,.5);
 }
 
 #whoweare, #ourhope, #purpose{
@@ -334,6 +335,8 @@ header a {
 	overflow: hidden;
 	padding: 15px;
 	padding-top: 50px;
+	font-size: 20px;
+    line-height: 27px;
 }
 
 .story p {
@@ -351,7 +354,6 @@ header a {
 	float: right;
 	width: 100%;
 	padding: 10px;
-	max-width: 450px;
 }
 
 .storypics {
@@ -364,19 +366,23 @@ header a {
 .storypics img {
 	width: 100%;
 	padding: 10px;
-	max-width: 450px;
 	margin: 0 2.5% 0 2.5%;
 }
 #ntlogo {
 	float: right;
 }
 
+.blog-link {
+	display: block;
+	text-align: center;
+}
+
 @media screen and (min-width: 428px) {
 	#pic1, #pic2{
-		width: 49%;
+		width: 60%;
 	}
 	.storypics img {
-		width: 40%;
+		width: 60%;
 	} 
 
 }
@@ -449,8 +455,10 @@ header a {
 	padding: 5px 0;
 }
 
-.section h3:last-of-type {
+.section h3 {
 	color: #990000;
+	font-size: 23px;
+	margin-top: 10px;
 }
 
 .section ul {
@@ -465,7 +473,23 @@ header a {
 }
 .address {
 	text-align: center;
-	font-weight: 600;
+	font-weight: 800;
+	font-size: 20px;
+}
+.important-note{
+	font-weight: 800;
+	font-size: 18px;
+}
+.important-note li {
+	padding: 0;
+	margin: 0;
+}
+.donate-container p {
+	font-size: 20px;
+}
+.donate-container span {
+	text-align: center;
+    display: block;
 }
 /*--------------------------------CONTACT US--------------------------*/
 .contact-container{
