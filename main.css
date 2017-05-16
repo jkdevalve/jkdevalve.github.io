@@ -191,11 +191,14 @@ header a {
 	color: white;
 }
 .moreinfo {
-	
 	border: 3px solid;
 	display: inline-block;
-	padding: 5px;
+	padding: 15px;
 	margin: 5px;
+}
+.moreinfo:hover{
+	border-color: #003D5C;
+	background-color: #003D5C;
 }
 @media screen and (min-height: 570px){
 	header {
@@ -293,13 +296,15 @@ header a {
 #mc_embed_signup_scroll_frnt h2 {
 	width: 100%;
 	font-size: 1.3em;
+	margin-bottom: 15px;
 }
 
-#mc_embed_signup_scroll_frnt .button {	
-    border: 1px solid;
-    font-size: small;
-    padding: 5px;
-
+#mc-embedded-subscribe{
+	background-color: #003D5C;
+	color: #fff;
+	border-color: #003D5C;
+	padding: 10px 20px;
+	margin: 15px 0;
 }
 
 @media screen and (min-width: 768px) {
