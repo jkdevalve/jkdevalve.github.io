@@ -245,13 +245,15 @@ header a {
 	display: inline-block;
 	vertical-align: top;
 	height: 285px;
-    text-align: center;
-    background-size: cover;
+  text-align: center;
+  background-size: cover;
+  padding-top: 0;
 }
 
 .statement h2, .statement-support h2 {
     font-size: 2em;
     color: white;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .hovertext{
@@ -264,7 +266,7 @@ header a {
 }
 
 #whoweare{
-	background-image: url(img/wwa.jpg);
+	background-image: url(img/Devalve-8874.jpg);
 	background-blend-mode: multiply;
 }
 
